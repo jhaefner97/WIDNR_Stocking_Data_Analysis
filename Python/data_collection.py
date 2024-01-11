@@ -24,6 +24,6 @@ def get_geo_data(species: str) -> None:
             filter_geo_data_response(Utils.google_client.value.geocode(formatted_location), result)
 
 print("Starting..")
-get_geo_data("muskellunge")
+get_geo_data("trout")
 backup_database()
 print("Done!")
