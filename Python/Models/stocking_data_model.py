@@ -12,6 +12,8 @@ class StockingData(base):
     local_waterbody_name = Column(String)
     species = Column(String)
     strain = Column(String)
+    latitude = Column(Float)
+    longitude = Column(Float)
     age_class = Column(String)
     nbr_stocked = Column(Integer)
     avg_len_inches = Column(Float)
@@ -25,6 +27,8 @@ Stocked Water Body Name: {self.stocked_water_body_name}
 Local Water Body Name: {self.local_waterbody_name}
 Species: {self.species}
 Strain: {self.strain}
+Latitude: {self.latitude}
+Longitude: {self.longitude}
 Age Class: {self.age_class}
 Stocked #: {self.nbr_stocked}
 Avg. Length(in): {self.avg_len_inches}
